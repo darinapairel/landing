@@ -1,0 +1,342 @@
+:root {
+    --gold: #d3b62a;
+    --timberwolf: #e1dcd6;
+    --white: #fcfcfc;
+    --onyx: #444;
+    --red: #ff5555
+}
+h1,
+h6,
+body{
+    margin: 0
+}
+.header-big {
+    font-family: HelveticaNeue;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.96;
+    letter-spacing: -0.48px;
+}
+.subhead {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.22;
+    letter-spacing: -0.18px;
+}
+.body-2 {
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: -0.18px;
+}
+.validation-text {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: -0.15px;
+}
+.body {
+    font-family: HelveticaNeue;
+    font-size: 15px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.47;
+    letter-spacing: -0.15px;
+}
+.caption {
+    font-family: HelveticaNeue;
+    font-size: 12px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.83;
+    letter-spacing: -0.12px;
+}
+
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(./fonts/HelveticaNeueCyr-Roman.woff) format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(./fonts/HelveticaNeueCyr-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+}
+@font-face {
+    font-family: HelveticaNeue;
+    src: url(./fonts/HelveticaNeueCyr-Bold.woff) format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+}
+.first-screen{
+    box-sizing: border-box;
+    border-top: 4.4px solid var(--gold);
+    background-image: url('./img/img-hero-bg@2x.png');
+    height: 683px;
+    object-fit: contain;
+    background-color: var(--onyx);
+    display: flex;
+    flex-direction: column;
+}
+.first-screen__logo{
+    width: 350px;
+    height: 145.1px;
+    margin: 62.5px auto 0 auto;
+}
+.first-screen__content{
+    margin: 83.4px auto;
+    width: 922px;
+    height: 302.5px;
+    padding: 6.3px 0;
+    display: flex;
+
+}
+.first-screen__text{
+    width: 415px;
+}
+.text__main-text{
+    margin: 30px 0;
+}
+.text_timberwolf{
+    color: var(--timberwolf);
+}
+.text_gold{
+    color: var(--gold);
+}
+.text__main-text_bold{
+    color: var(--white);
+}
+.text__title{
+    font-family: HelveticaNeue;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.96;
+    letter-spacing: -0.48px;
+}
+.text__announcement{
+    margin-top: 10px;
+    font-size: 22px;
+}
+.first-screen__video{
+    margin: 19.9px 0 19.9px 62px;
+    object-fit: contain;
+}
+
+.second-screen{
+    height: 1302px;
+    background: linear-gradient(to bottom, var(--white) 0, var(--white) 364px,   364px, whitesmoke 960px, var(--white) 960px, var(--white) 1302px);
+    color: var(--onyx);    
+    
+}
+.part{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px;
+}
+.text{
+    width: 415px;
+    height: 220px;
+}
+.first-part__image {
+    height: 645px;
+}
+.gold-border_left{
+    width: 445px;
+    height: 347px;
+    position: absolute;
+    margin: 154px 380px 154px 95px;
+    border: solid 2px var(--gold);
+    border-left: none;
+
+}
+.gold-border_left::after, 
+.gold-border_left::before{
+    content: "";
+    position: absolute;
+    height: 15%;
+    width: 2px;
+    background-color: var(--gold);
+    left: 0;
+}
+.gold-border_left::after{
+    top: -1px;
+}
+.gold-border_left::before{
+    bottom: -1px;
+}
+
+.gold-border_right{
+    width: 540px;
+    height: 337px;
+    position: absolute;
+    margin: 40px 96px 39.6px 284px;
+    border: solid 2px var(--gold);
+    border-right: none;
+
+}
+.gold-border_right::after, 
+.gold-border_right::before{
+    content: "";
+    position: absolute;
+    height: 15%;
+    width: 2px;
+    background-color: var(--gold);
+    right: 0;
+}
+.gold-border_right::after{
+    top: -1px;
+}
+.gold-border_right::before{
+    bottom: -1px;
+}
+.img-money{    
+    margin-right: 60px;
+}
+.third-screen{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 4.4px solid var(--gold);
+    background-image: url('./img/join-bg-01@3x.jpg');
+    background-size: cover;
+    height: 780px;
+    color: var(--white);
+}
+.third-screen__logo{
+    padding: 100px 0;
+    width: 260.7px;
+    height: 108.1px;
+}
+.third-screen__text{   
+    line-height: 2.56;
+    letter-spacing: 0.85px;
+}
+.signup{
+    width: 350px;
+}
+.signup>input{
+    width: inherit;
+    display: block;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    height: 50px;
+    border-radius: 4px;
+    background-color: var(--timberwolf);
+}
+input::placeholder
+{
+    color: var(--onyx); 
+    opacity: 0.5;
+    font-family: HelveticaNeue;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 1.56;
+    letter-spacing: -0.18px;
+    text-align: center;
+}
+
+input:focus::placeholder
+{
+    color: transparent;
+}
+.signup>button{
+    margin-top: 15px;
+    background-color: var(--gold);
+    width: inherit;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.22;
+    letter-spacing: -0.18px;
+    color: var(--white);
+}
+.signup>.validation{
+    color: var(--red);
+    margin: 30px 0 60px 0;
+    text-align: center;
+}
+
+.socialmedia-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.socialmedia-links>.body-2{
+    margin-bottom: 10px;
+}
+.img-links{
+    width: 110px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+footer{
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 269px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    padding-top: 50px;
+    gap: 50px;
+    box-sizing: border-box;
+}
+.disclosure>h6{
+    font-size: 10px;
+    letter-spacing: -0.1px;
+    color: var(--white);
+}
+
+.disclosure>p{
+    font-family: HelveticaNeue;
+    font-size: 8px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: -0.08px;
+    color: var(--gold);
+}
+.left-col{
+    flex-direction: column;
+    width: 160px;
+    height: 89px;
+}
+.white-space{
+    white-space:pre-line;
+}
+.security{
+    font-size: 8px;
+    line-height: 1.38;
+    width: 540px;
+    color: var(--timberwolf);
+}
+.disclosure+img{
+    width: 36px;
+    margin-top: 40px;
+}
